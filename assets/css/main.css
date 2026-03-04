@@ -1,0 +1,273 @@
+/* Portfolio 2026 - Styles globaux */
+
+/* ====================================
+   Fonts personnalisées
+   ==================================== */
+
+/* Motley Forces - Pour les titres */
+@font-face {
+  font-family: "Motley Forces";
+  src: url("/fonts/MotleyForces.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Super Malibu - Pour les textes */
+@font-face {
+  font-family: "Super Malibu";
+  src: url("/fonts/SuperMalibu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins - Pour les descriptions */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====================================
+   Reset et base
+   ==================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-beige-light text-gray-800 font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-violet-pastel;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* ====================================
+   Composants personnalisés
+   ==================================== */
+
+@layer components {
+  /* Grille de fond */
+  .bg-grid-pattern {
+    @apply bg-beige-light bg-grid bg-[length:40px_40px];
+    background-position: center center;
+  }
+
+  .bg-grid-pattern-dense {
+    @apply bg-beige-light bg-grid-dense bg-[length:20px_20px];
+    background-position: center center;
+  }
+
+  /* Titres stylisés */
+  .title-display {
+    @apply font-display text-violet-pastel leading-tight;
+  }
+
+  .title-primary {
+    @apply font-display text-display-lg text-violet-pastel;
+  }
+
+  .title-secondary {
+    @apply font-display text-display-md text-violet-pastel;
+  }
+
+  .title-tertiary {
+    @apply font-display text-display-sm text-rose-soft;
+  }
+
+  /* Boutons */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-body text-body-md transition-all duration-300 ease-smooth;
+  }
+
+  .btn-primary {
+    @apply btn bg-violet-pastel text-white hover:bg-violet-light hover:text-violet-pastel shadow-soft hover:shadow-hover;
+  }
+
+  .btn-secondary {
+    @apply btn bg-rose-soft text-white hover:bg-opacity-80;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-violet-pastel text-violet-pastel hover:bg-violet-pastel hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply btn text-violet-pastel hover:bg-violet-light hover:bg-opacity-30;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-3xl shadow-card overflow-hidden transition-all duration-300 ease-smooth;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-hover hover:-translate-y-1;
+  }
+
+  /* Tags / Pills */
+  .tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-body-sm font-body;
+  }
+
+  .tag-primary {
+    @apply tag bg-violet-light text-violet-pastel;
+  }
+
+  .tag-secondary {
+    @apply tag bg-rose-soft bg-opacity-20 text-rose-soft;
+  }
+
+  /* Container personnalisé */
+  .container-portfolio {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Navigation link */
+  .nav-link {
+    @apply relative font-body text-gray-600 transition-colors duration-300 hover:text-violet-pastel;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-violet-pastel transition-all duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-violet-pastel;
+  }
+
+  /* Project card */
+  .project-card {
+    @apply card-hover cursor-pointer;
+  }
+
+  .project-card-image {
+    @apply w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105;
+  }
+
+  .project-card-content {
+    @apply p-6;
+  }
+
+  /* Filter button */
+  .filter-btn {
+    @apply px-4 py-2 rounded-full font-body text-body-sm transition-all duration-300;
+  }
+
+  .filter-btn-active {
+    @apply filter-btn bg-violet-pastel text-white;
+  }
+
+  .filter-btn-inactive {
+    @apply filter-btn bg-transparent text-gray-600 hover:text-violet-pastel hover:bg-violet-light hover:bg-opacity-30;
+  }
+}
+
+/* ====================================
+   Utilities personnalisées
+   ==================================== */
+
+@layer utilities {
+  /* Animation delays pour GSAP */
+  .gsap-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .gsap-fade-in {
+    opacity: 0;
+  }
+
+  .gsap-scale {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-pastel to-rose-soft;
+  }
+
+  /* Aspect ratios */
+  .aspect-project {
+    aspect-ratio: 4 / 3;
+  }
+
+  .aspect-hero {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Scrollbar personnalisée */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: theme("colors.violet.pastel") theme("colors.beige.light");
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: theme("colors.beige.light");
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: theme("colors.violet.pastel");
+    border-radius: 4px;
+  }
+
+  /* Selection color */
+  ::selection {
+    background-color: theme("colors.violet.light");
+    color: theme("colors.violet.pastel");
+  }
+}
+
+/* ====================================
+   Page transitions
+   ==================================== */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s ease-out;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
