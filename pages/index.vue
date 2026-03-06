@@ -146,7 +146,9 @@ onMounted(() => {
             <div
               class="inline-flex items-center gap-2 px-4 py-2 bg-violet-light/30 text-violet-pastel rounded-full text-sm mb-6"
             >
-              <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              <span
+                class="w-2 h-2 bg-green-400 rounded-full animate-pulse"
+              ></span>
               Designer & Développeuse Web
             </div>
 

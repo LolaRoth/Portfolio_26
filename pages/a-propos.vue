@@ -23,8 +23,8 @@ const toolsSection = ref<HTMLElement | null>(null);
 // Informations personnelles
 const personalInfo = {
   name: "Lola Roth",
-  title: "Designer & Développeuse Web",
-  bio: `Passionnée par le design et le développement web, je crée des expériences numériques uniques et engageantes. Mon parcours m'a permis d'explorer différentes facettes de la création digitale, du design graphique au développement front-end, en passant par la communication visuelle.`,
+  title: "Chargée de communication",
+  bio: `Passionnée par le design et la communication, je crée des expériences numériques uniques et engageantes. Mon parcours m'a permis d'explorer différentes facettes de la création digitale, du design graphique au développement front-end, en passant par la communication visuelle.`,
   email: "lolaroth08@gmail.com",
   linkedin_url: "https://www.linkedin.com/in/lolaroth/",
   cv_url: "/cv.pdf",
