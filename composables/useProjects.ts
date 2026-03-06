@@ -82,7 +82,17 @@ export const useProjects = () => {
 
     // Filtre par tag (client-side)
     if (filters.value.tag) {
-      result = result.filter((p) => p.tags?.includes(filters.value.tag as any));
+      const selectedTag = filters.value.tag as string;
+      result = result.filter((p) => {
+        if (!p.tags) return false;
+        // Si on filtre par "développement web", inclure aussi les projets avec "dev"
+        if (selectedTag.toLowerCase() === "développement web") {
+          return p.tags.some((t: string) => 
+            t.toLowerCase() === "développement web" || t.toLowerCase() === "dev"
+          );
+        }
+        return p.tags.includes(selectedTag as any);
+      });
     }
 
     return result;

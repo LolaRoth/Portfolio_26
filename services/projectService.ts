@@ -270,7 +270,11 @@ export const projectService = {
     const tagsSet = new Set<string>();
     (data || []).forEach((row: any) => {
       if (Array.isArray(row.tags)) {
-        row.tags.forEach((t: string) => tagsSet.add(t));
+        row.tags.forEach((t: string) => {
+          // Normaliser "dev" en "développement web"
+          const normalizedTag = t.toLowerCase() === "dev" ? "développement web" : t;
+          tagsSet.add(normalizedTag);
+        });
       }
     });
 
