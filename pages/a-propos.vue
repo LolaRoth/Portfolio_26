@@ -311,7 +311,7 @@ onUnmounted(() => {
 
             <p
               class="text-gray-600 text-lg leading-relaxed mb-8"
-              style="font-family: &quot;Poppins&quot;, sans-serif"
+              style="font-family: 'Poppins', sans-serif"
             >
               {{ personalInfo.bio }}
             </p>
@@ -439,7 +439,7 @@ onUnmounted(() => {
               <p
                 v-if="exp.description"
                 class="text-gray-600 leading-relaxed"
-                style="font-family: &quot;Poppins&quot;, sans-serif"
+                style="font-family: 'Poppins', sans-serif"
               >
                 {{ exp.description }}
               </p>
@@ -549,7 +549,7 @@ onUnmounted(() => {
               <p
                 v-if="formation.description"
                 class="text-gray-600 text-sm leading-relaxed"
-                style="font-family: &quot;Poppins&quot;, sans-serif"
+                style="font-family: 'Poppins', sans-serif"
               >
                 {{ formation.description }}
               </p>
@@ -624,7 +624,7 @@ onUnmounted(() => {
               </h2>
               <p
                 class="text-gray-600 mb-8"
-                style="font-family: &quot;Poppins&quot;, sans-serif"
+                style="font-family: 'Poppins', sans-serif"
               >
                 Je suis toujours ouverte à de nouvelles opportunités et
                 collaborations.

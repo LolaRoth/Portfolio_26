@@ -121,7 +121,7 @@ const yearDisplay = computed(() => currentProject.value?.year.toString() || "");
             <!-- Description courte -->
             <p
               class="text-body-lg text-gray-600 mb-8"
-              style="font-family: &quot;Poppins&quot;, sans-serif"
+              style="font-family: 'Poppins', sans-serif"
             >
               {{ currentProject.short_description }}
             </p>
@@ -233,7 +233,7 @@ const yearDisplay = computed(() => currentProject.value?.year.toString() || "");
           <div class="prose prose-lg text-gray-600">
             <p
               class="whitespace-pre-line"
-              style="font-family: &quot;Poppins&quot;, sans-serif"
+              style="font-family: 'Poppins', sans-serif"
             >
               {{ currentProject.long_description }}
             </p>
