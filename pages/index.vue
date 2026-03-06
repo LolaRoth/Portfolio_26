@@ -149,7 +149,7 @@ onMounted(() => {
               <span
                 class="w-2 h-2 bg-green-400 rounded-full animate-pulse"
               ></span>
-              Designer & Développeuse Web
+              Chargée de communication
             </div>
 
             <h2 class="title-secondary text-gray-800 mb-2">Hello, je suis</h2>
