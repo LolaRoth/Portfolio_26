@@ -26,7 +26,7 @@ const socialLinks = [
             <img
               src="/images/mascot.png"
               alt="icone de la mascotte"
-              class="w-40 h-40 object-contain"
+              class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain"
             />
           </NuxtLink>
         </div>

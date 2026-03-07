@@ -55,33 +55,33 @@ onMounted(() => {
 <template>
   <div>
     <!-- Hero Section - Layout matching the design mockup -->
-    <section class="min-h-[80vh] flex items-center justify-center relative">
+    <section class="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
       <div class="container-portfolio">
         <div class="relative flex flex-col items-center">
           <!-- Row 1: "Portfolio" with "2026" positioned to the right -->
           <div class="relative">
             <h1
-              class="font-display text-[5rem] md:text-[7rem] lg:text-[9rem] text-violet-pastel leading-none tracking-tight"
+              class="font-display text-[3rem] sm:text-[4rem] md:text-[7rem] lg:text-[9rem] text-violet-pastel leading-none tracking-tight"
             >
               Portfolio
             </h1>
             <!-- 2026 positioned to the bottom-right of Portfolio -->
             <span
-              class="font-display text-xl md:text-2xl text-rose-soft absolute -right-4 bottom-0 translate-x-full"
+              class="font-display text-base sm:text-lg md:text-2xl text-rose-soft absolute right-0 sm:-right-4 -bottom-6 sm:bottom-0 sm:translate-x-full"
             >
               2026
             </span>
           </div>
 
           <!-- Row 2: Mascot + "Lola Roth" -->
-          <div class="flex items-center gap-4 mt-2">
+          <div class="flex items-center gap-2 sm:gap-4 mt-8 sm:mt-2">
             <img
               src="/images/mascot.png"
               alt="Mascotte"
-              class="w-20 h-20 md:w-28 md:h-28 object-contain"
+              class="w-14 h-14 sm:w-20 sm:h-20 md:w-28 md:h-28 object-contain"
             />
             <p
-              class="font-display text-3xl md:text-4xl lg:text-5xl text-rose-soft tracking-tight"
+              class="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-rose-soft tracking-tight"
             >
               Lola Roth
             </p>
