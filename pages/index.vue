@@ -55,36 +55,38 @@ onMounted(() => {
 <template>
   <div>
     <!-- Hero Section - Layout matching the design mockup -->
-    <section class="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
+    <section
+      class="min-h-[80vh] flex items-center justify-center relative overflow-hidden"
+    >
       <div class="container-portfolio">
         <div class="relative flex flex-col items-center">
-          <!-- Row 1: "Portfolio" with "2026" positioned to the right -->
-          <div class="relative">
-            <h1
-              class="font-display text-[3rem] sm:text-[4rem] md:text-[7rem] lg:text-[9rem] text-violet-pastel leading-none tracking-tight"
-            >
-              Portfolio
-            </h1>
-            <!-- 2026 positioned to the bottom-right of Portfolio -->
-            <span
-              class="font-display text-base sm:text-lg md:text-2xl text-rose-soft absolute right-0 sm:-right-4 -bottom-6 sm:bottom-0 sm:translate-x-full"
-            >
-              2026
-            </span>
-          </div>
-
-          <!-- Row 2: Mascot + "Lola Roth" -->
-          <div class="flex items-center gap-2 sm:gap-4 mt-8 sm:mt-2">
+          <!-- Row 1: Mascotte + "Lola Roth" en gros et violet -->
+          <div class="flex items-center gap-2 sm:gap-4">
             <img
               src="/images/mascot.png"
               alt="Mascotte"
-              class="w-14 h-14 sm:w-20 sm:h-20 md:w-28 md:h-28 object-contain"
+              class="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain self-end"
             />
-            <p
-              class="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-rose-soft tracking-tight"
+            <h1
+              class="font-display text-[3.5rem] sm:text-[6rem] md:text-[7rem] lg:text-[10rem] text-violet-pastel leading-none tracking-tight"
             >
               Lola Roth
+            </h1>
+          </div>
+
+          <!-- Row 2: "Portfolio" en rose et plus petit avec "2026" -->
+          <div class="relative mt-2 sm:mt-4">
+            <p
+              class="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-rose-soft tracking-tight"
+            >
+              Portfolio
             </p>
+            <!-- 2026 positioned to the right of Portfolio -->
+            <span
+              class="font-display text-sm sm:text-lg md:text-xl text-rose-soft absolute right-0 sm:-right-4 -bottom-5 sm:bottom-0 sm:translate-x-full"
+            >
+              2026
+            </span>
           </div>
         </div>
       </div>
