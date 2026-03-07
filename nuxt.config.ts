@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         },
         { name: "format-detection", content: "telephone=no" },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [{ rel: "icon", type: "image/png", href: "/images/mascot.png" }],
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
