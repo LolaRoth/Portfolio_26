@@ -113,7 +113,7 @@ onMounted(() => {
         <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <!-- Photo -->
           <div class="relative flex justify-center">
-            <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+            <div class="relative w-96 h-96 sm:w-[420px] sm:h-[420px] lg:w-[520px] lg:h-[520px]">
               <!-- Cercle décoratif arrière -->
               <div
                 class="absolute inset-0 bg-gradient-to-br from-violet-light/40 to-rose-soft/30 rounded-full blur-xl scale-125"

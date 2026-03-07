@@ -242,7 +242,7 @@ onUnmounted(() => {
             "
           >
             <div
-              class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px]"
+              class="relative w-96 h-96 sm:w-[420px] sm:h-[420px] lg:w-[550px] lg:h-[550px]"
             >
               <!-- Cercle décoratif arrière -->
               <div
