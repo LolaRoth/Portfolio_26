@@ -27,7 +27,7 @@ const personalInfo = {
   bio: `Passionnée par le design et la communication, je crée des expériences numériques uniques et engageantes. Mon parcours m'a permis d'explorer différentes facettes de la création digitale, du design graphique au développement front-end, en passant par la communication visuelle.`,
   email: "lolaroth08@gmail.com",
   linkedin_url: "https://www.linkedin.com/in/lolaroth/",
-  cv_url: "/cv.pdf",
+  cv_url: "/CV-Lola_ROTH.pdf",
 };
 
 // Centres d'intérêt
@@ -311,7 +311,7 @@ onUnmounted(() => {
 
             <p
               class="text-gray-600 text-lg leading-relaxed mb-8"
-              style="font-family: 'Poppins', sans-serif"
+              style="font-family: &quot;Poppins&quot;, sans-serif"
             >
               {{ personalInfo.bio }}
             </p>
@@ -439,7 +439,7 @@ onUnmounted(() => {
               <p
                 v-if="exp.description"
                 class="text-gray-600 leading-relaxed"
-                style="font-family: 'Poppins', sans-serif"
+                style="font-family: &quot;Poppins&quot;, sans-serif"
               >
                 {{ exp.description }}
               </p>
@@ -549,7 +549,7 @@ onUnmounted(() => {
               <p
                 v-if="formation.description"
                 class="text-gray-600 text-sm leading-relaxed"
-                style="font-family: 'Poppins', sans-serif"
+                style="font-family: &quot;Poppins&quot;, sans-serif"
               >
                 {{ formation.description }}
               </p>
@@ -624,7 +624,7 @@ onUnmounted(() => {
               </h2>
               <p
                 class="text-gray-600 mb-8"
-                style="font-family: 'Poppins', sans-serif"
+                style="font-family: &quot;Poppins&quot;, sans-serif"
               >
                 Je suis toujours ouverte à de nouvelles opportunités et
                 collaborations.
