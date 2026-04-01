@@ -24,7 +24,7 @@ const toolsSection = ref<HTMLElement | null>(null);
 const personalInfo = {
   name: "Lola Roth",
   title: "Chargée de communication",
-  bio: `Passionnée par le design et la communication, je crée des expériences numériques uniques et engageantes. Mon parcours m'a permis d'explorer différentes facettes de la création digitale, du design graphique au développement front-end, en passant par la communication visuelle.`,
+  bio: `Future étudiante à l'ISCOM Paris en MBA Événementiel, Influence et Réputation. Actuellement à la recherche d'une alternance à Paris dans ce domaine pour septembre 2026.`,
   email: "lolaroth08@gmail.com",
   linkedin_url: "https://www.linkedin.com/in/lolaroth/",
   cv_url: "/CV-Lola_ROTH.pdf",

@@ -113,7 +113,9 @@ onMounted(() => {
         <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <!-- Photo -->
           <div class="relative flex justify-center">
-            <div class="relative w-96 h-96 sm:w-[420px] sm:h-[420px] lg:w-[520px] lg:h-[520px]">
+            <div
+              class="relative w-96 h-96 sm:w-[420px] sm:h-[420px] lg:w-[520px] lg:h-[520px]"
+            >
               <!-- Cercle décoratif arrière -->
               <div
                 class="absolute inset-0 bg-gradient-to-br from-violet-light/40 to-rose-soft/30 rounded-full blur-xl scale-125"
@@ -164,8 +166,9 @@ onMounted(() => {
               <span class="inline-block ml-2 animate-wave">👋</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
-              Actuellement en alternance à la Communauté de communes Val de Gray
-              en tant que chargée de communication.
+              Future étudiante à l'ISCOM Paris en MBA Événementiel, Influence et
+              Réputation. À la recherche d'une alternance à Paris pour septembre
+              2026.
             </p>
             <NuxtLink
               to="/a-propos"
