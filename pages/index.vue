@@ -167,8 +167,7 @@ onMounted(() => {
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
               Future étudiante à l'ISCOM Paris en MBA Événementiel, Influence et
-              Réputation. À la recherche d'une alternance à Paris pour septembre
-              2026.
+              Réputation. Actuellement chargée de communication à la Communauté de Communes Val de Gray jusqu'en août 2026
             </p>
             <NuxtLink
               to="/a-propos"

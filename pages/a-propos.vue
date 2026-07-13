@@ -24,7 +24,7 @@ const toolsSection = ref<HTMLElement | null>(null);
 const personalInfo = {
   name: "Lola Roth",
   title: "Chargée de communication",
-  bio: `Future étudiante à l'ISCOM Paris en MBA Événementiel, Influence et Réputation. Actuellement à la recherche d'une alternance à Paris dans ce domaine pour septembre 2026.`,
+  bio: `Future étudiante à l'ISCOM Paris en MBA Événementiel, Influence et Réputation. Actuellement chargée de communication pour la Communauté de Communes Val de Gray`,
   email: "lolaroth08@gmail.com",
   linkedin_url: "https://www.linkedin.com/in/lolaroth/",
   cv_url: "/CV-Lola_ROTH.pdf",
